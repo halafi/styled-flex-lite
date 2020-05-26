@@ -8,9 +8,9 @@ Minimalistic Flex and Box components with Typescript support.
 ## Install
 
 ```
-yarn add styled-flex-component
+yarn add styled-flex-lite
 or
-npm i -S styled-flex-component
+npm i -S styled-flex-lite
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ import React from 'react';
 import { Flex } from 'styled-flex-lite';
 
 export default () => (
-  <Flex flexDirection="column" as="main">
+  <Flex flexDirection="column" alignItems="center" as="main">
     <div>Hello</div>
     <div>World</div>
   </Flex>
