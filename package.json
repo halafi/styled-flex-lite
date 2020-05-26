@@ -5,12 +5,14 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "license": "MIT",
+  "files": ["lib/**/*"],
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
     "prepublishOnly": "npm run test && npm run lint",
     "preversion": "npm run lint",
     "test": "jest",
+    "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint --ext .ts --ext .tsx src"
   },
   "peerDependencies": {
