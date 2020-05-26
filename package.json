@@ -11,6 +11,8 @@
     "prepare": "npm run build",
     "prepublishOnly": "npm run test && npm run lint",
     "preversion": "npm run lint",
+    "version" : "npm run format && git add --all",
+    "postversion" : "git push origin master && git push origin --tags",
     "test": "jest --passWithNoTests",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint --ext .ts --ext .tsx src"
