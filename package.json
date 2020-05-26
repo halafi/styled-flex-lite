@@ -1,0 +1,36 @@
+{
+  "name": "styled-flex-lite",
+  "version": "0.0.1",
+  "description": "reusable styled components",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run test && npm run lint",
+    "preversion": "npm run lint",
+    "test": "jest",
+    "lint": "eslint --ext .ts --ext .tsx src"
+  },
+  "peerDependencies": {
+    "styled-components": ">=4.x.x"
+  },
+  "dependencies": {
+    "styled-components": "^5.1.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.3",
+    "@types/styled-components": "^5.1.0",
+    "@typescript-eslint/eslint-plugin": "^3.0.1",
+    "@typescript-eslint/parser": "^3.0.1",
+    "eslint": "^7.1.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "jest": "^26.0.1",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.3"
+  }
+}
