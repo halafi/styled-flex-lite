@@ -1,6 +1,6 @@
-# Styled Flex & Box Components
+# Styled Flex Component
 
-Minimalistic primitive React UI components (Flex and Box) with Typescript support.
+Minimalistic React Flex component with Typescript support.
 
 - No styled-system props
 - No support for array props
@@ -18,7 +18,7 @@ npm i -S styled-flex-lite
 
 ```jsx
 import React from 'react';
-import { Flex } from 'styled-flex-lite';
+import Flex from 'styled-flex-lite';
 
 export default () => (
   <Flex flexDirection="column" alignItems="center" as="main">
@@ -28,11 +28,23 @@ export default () => (
 );
 ```
 
-## Props
+## Flex Props
 
-### Flex
-
-TBD
+```
+  as?: string; // polymorphic prop, e.g. main, footer...
+  alignItems?: Alignment;
+  alignContent?: AlignContent;
+  justifyContent?: Justify;
+  flexDirection?: Direction;
+  flexWrap?: Wrap;
+  flexFlow?: string;
+  flex?: string;
+  flexGrow?: number;
+  flexShrink?: number;
+  flexBasis?: string;
+  order?: number;
+  alignSelf?: Alignment;
+```
 
 # License
 

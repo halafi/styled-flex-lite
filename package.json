@@ -8,6 +8,10 @@
   "files": [
     "lib/**/*"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/halafi/styled-flex-lite.git"
+  },
   "scripts": {
     "build": "tsc",
     "storybook": "start-storybook",
