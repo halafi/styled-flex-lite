@@ -15,28 +15,45 @@
     "preversion": "npm run lint",
     "version": "npm run format && git add --all",
     "postversion": "git push origin master && git push origin --tags",
-    "test": "jest --passWithNoTests",
     "format": "prettier --write \"src/**/*.ts\"",
-    "lint": "eslint --ext .ts --ext .tsx src"
+    "lint": "eslint --ext .ts --ext .tsx src",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage"
   },
   "peerDependencies": {
+    "react": ">=16.x.x",
     "styled-components": ">=4.x.x"
   },
   "dependencies": {
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.10.0",
+    "@babel/core": "^7.10.0",
+    "@babel/preset-env": "^7.10.0",
+    "@babel/preset-react": "^7.10.0",
+    "@babel/preset-typescript": "^7.9.0",
     "@types/jest": "^25.2.3",
+    "@types/react-test-renderer": "^16.9.2",
     "@types/styled-components": "^5.1.0",
     "@typescript-eslint/eslint-plugin": "^3.0.1",
     "@typescript-eslint/parser": "^3.0.1",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.0.1",
+    "babel-loader": "^8.1.0",
     "eslint": "^7.1.0",
-    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-airbnb": "^18.1.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.20.0",
     "jest": "^26.0.1",
     "prettier": "^2.0.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-test-renderer": "^16.13.1",
     "typescript": "^3.9.3"
   }
 }
