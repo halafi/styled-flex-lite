@@ -2,8 +2,17 @@
 
 exports[`#Flex renders correctly 1`] = `
 <div
-  className="sc-AxjAm zIzCu"
+  className=""
 >
-  Hi there
+  <div
+    className=""
+  >
+    1
+  </div>
+  <div
+    className=""
+  >
+    2
+  </div>
 </div>
 `;

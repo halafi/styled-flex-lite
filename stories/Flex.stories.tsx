@@ -1,3 +1,4 @@
+// @ts-nocheck
 /* eslint-disable import/no-extraneous-dependencies */
 import styled from 'styled-components';
 import * as React from 'react';
