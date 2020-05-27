@@ -1,5 +1,7 @@
 # Styled Flex Component
 
+[![npm](https://img.shields.io/npm/v/styled-flex-lite.svg)](https://www.npmjs.com/package/styled-flex-lite)
+
 Minimalistic React Flex component with Typescript support.
 
 - No styled-system props
