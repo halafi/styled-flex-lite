@@ -1,7 +1,7 @@
 import React from 'react';
 // import styled from 'styled-components';
 import * as renderer from 'react-test-renderer';
-import Flex from '../Flex';
+import Flex from '..';
 
 describe('#Flex', () => {
   it('renders correctly', () => {

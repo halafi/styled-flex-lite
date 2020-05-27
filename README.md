@@ -1,8 +1,9 @@
 # Styled Flex & Box Components
 
-Minimalistic Flex and Box components with Typescript support.
+Minimalistic primitive React UI components (Flex and Box) with Typescript support.
 
 - No styled-system props
+- No support for array props
 - Compatible with majority of rebass props
 
 ## Install

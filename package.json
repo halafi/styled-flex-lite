@@ -10,7 +10,9 @@
   ],
   "scripts": {
     "build": "tsc",
-    "prepare": "npm run build",
+    "storybook": "start-storybook",
+    "build-storybook": "build-storybook -c .storybook -o docs",
+    "prepare": "npm run build && npm run build-storybook",
     "prepublishOnly": "npm run test && npm run lint",
     "preversion": "npm run lint",
     "version": "npm run format && git add --all",
@@ -34,6 +36,9 @@
     "@babel/preset-env": "^7.10.0",
     "@babel/preset-react": "^7.10.0",
     "@babel/preset-typescript": "^7.9.0",
+    "@storybook/addon-docs": "^5.3.19",
+    "@storybook/addon-knobs": "^5.3.19",
+    "@storybook/react": "^5.3.19",
     "@types/jest": "^25.2.3",
     "@types/react-test-renderer": "^16.9.2",
     "@types/styled-components": "^5.1.0",
@@ -52,8 +57,11 @@
     "jest": "^26.0.1",
     "prettier": "^2.0.5",
     "react": "^16.13.1",
+    "react-docgen-typescript-loader": "^3.7.2",
     "react-dom": "^16.13.1",
+    "react-is": "^16.13.1",
     "react-test-renderer": "^16.13.1",
+    "ts-loader": "^7.0.5",
     "typescript": "^3.9.3"
   }
 }

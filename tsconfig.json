@@ -9,6 +9,6 @@
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true
   },
-  "include": ["src"],
+  "include": ["src", "stories/Flex.stories.tsx", "stories/Box.stories.tsx"],
   "exclude": ["node_modules", "**/__tests__/*"]
 }
