@@ -18,7 +18,7 @@
     "build-storybook": "build-storybook -c .storybook -o docs",
     "prepare": "npm run build",
     "prepublishOnly": "npm run test && npm run lint",
-    "preversion": "npm run lint && npm run build-storybook",
+    "preversion": "npm run lint",
     "version": "npm run format && git add --all",
     "postversion": "git push origin master && git push origin --tags",
     "format": "prettier --write \"src/**/*.ts\"",
